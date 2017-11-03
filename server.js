@@ -41,7 +41,10 @@ app.get('/friends', (req, res) => {
 });
 
 app.post('/new-friend', (req, res) => {
+	console.log('body display==========', req.body);
+
 	friends.push(req.body);
+
 	res.send(friends);
 });
 
